@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="java-learn/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar{
+            background-color:rgb(17, 15, 15);
+        }
+
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            padding: .2rem;
+        }
+
+        .navbar ul a{
+            text-decoration: none;
+        }
+
+        .navbar ul a li{
+            color: rgb(255, 249, 238);
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+        }
+
+        .navbar ul a li:hover{
+            background-color: greenyellow;
+            color: black;
+            cursor:pointer;
+            animation: animate 400ms;
+        }
+
+        @keyframes animate{
+            0%{
+                background-color: rgb(0, 0, 0);
+            }
+            100%{
+                background-color: greenyellow;
+            }
+        }
+
+        .blog-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .blog-container h1{
+            padding: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <a href="/"><li>HOME</li></a>
+            <a href="/blogs"><li>Blogs</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="#"><li>&copy;copyright</li></a>
+        </ul>
+    </div>
+
+    {{{body}}}
+
+</body>
+</html>
